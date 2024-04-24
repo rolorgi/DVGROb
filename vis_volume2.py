@@ -73,17 +73,17 @@ def change_background_to_black(vis):
     opt.background_color = np.asarray([0, 0, 0])
     return False
 
-### Get the volume #####################################################################################################
+### Get convex hull and volume #####################################################################################################
 
 # put axes origin in the middle
 axes = o3d.geometry.TriangleMesh.create_coordinate_frame()
-
 
 # get the convex hull
 hull, _ = o3d.geometry.PointCloud.compute_convex_hull(pcd)
 hull_ls = o3d.geometry.LineSet.create_from_triangle_mesh(hull)
 o3d.visualization.draw_geometries([hull_ls, axes])
 
+# print the volume
 print(hull.get_volume())
 
 ########################################################################################################################
