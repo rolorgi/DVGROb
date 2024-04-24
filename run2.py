@@ -2,10 +2,6 @@
 Added fine recostruction export and RobustNeRF loss modification
 """
 
-import sys
-# add the path of the virtual environmentsite-packages to colab system path
-sys.path.append("/content/gdrive/MyDrive/dvgo_env/lib/python3.10/site-packages")
-
 import os, sys, copy, glob, json, time, random, argparse
 from shutil import copyfile
 from tqdm import tqdm, trange
