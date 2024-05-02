@@ -1,5 +1,5 @@
 """
-Added fine recostruction export and RobustNeRF loss modification
+Added fine recostruction export (line 685) and RobustNeRF (line 305) loss modification (line 498)
 """
 
 import os, sys, copy, glob, json, time, random, argparse
@@ -781,4 +781,3 @@ if __name__=='__main__':
         imageio.mimwrite(os.path.join(testsavedir, 'video.depth.mp4'), utils.to8b(depth_vis), fps=30, quality=8)
 
     print('Done')
-

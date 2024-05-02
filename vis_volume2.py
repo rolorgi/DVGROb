@@ -1,5 +1,5 @@
 """
-Modified version to visualize the convex hull and calculate the volume
+Modified version to visualize the convex hull and calculate the volume (line 76)
 """
 
 import argparse
@@ -87,5 +87,3 @@ o3d.visualization.draw_geometries([hull_ls, axes])
 print(hull.get_volume())
 
 ########################################################################################################################
-
-
